@@ -15,49 +15,31 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      
-=======
       <Router>
         <Switch>
           <Route path="/" exact={true}>
-            <SignIn />
+            <Countries />
           </Route>
           <Route path="/countries/:name">
             <Country />
           </Route>
-          <Route path="countries" exact={true}>
+          <Route path="countries">
             <Countries />
           </Route>
-          <Route path="/sign-up" exact={true}>
+          <Route path="/sign-up">
             <SignUp />
           </Route>
           <Route path="/sign-out">
             <SignOut />
           </Route>
-          <Route path="/home" exact={true}>
+          <Route path="/home">
             <Home />
           </Route>
-          <Route path="/about-us" exact={true}>
+          <Route path="/about-us">
             <AboutUs />
           </Route>
         </Switch>
       </Router>
->>>>>>> 6f38084a7e2a22fa6abcf6c33b53f203e36fea99
     </div>
   );
 }
