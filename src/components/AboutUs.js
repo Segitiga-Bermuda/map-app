@@ -17,11 +17,13 @@ export default function AboutUs() {
                         <Card.Body >
                             <Card.Title style={{textAlign:"center"}}>@Meiashari</Card.Title>
                                 <Card.Text>
-                                    Github: 
+                                    Github:@meiashari
                                 </Card.Text>
                         </Card.Body>
                 <Card.Footer>
-                <small className="text-muted">Quote:</small>
+                <small className="text-muted">Quote:semua akan mati pada waktunya pada waktunya
+                maka hidup mesti have fun, apapun terjadinya~
+                </small>
                 </Card.Footer>
                 </Card>
 

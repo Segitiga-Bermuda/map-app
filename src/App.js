@@ -1,13 +1,13 @@
 import React from 'react';
 import Home from "./components/Home"
-//import AboutUs from "./components/AboutUs"
+import AboutUs from "./components/AboutUs"
 import Footer from "./components/Footer"
 
 function App() {
   return (
     <div className="App">
       <Home />
-      {/* <AboutUs /> */}
+      <AboutUs />
       <Footer />
     </div>
   );
