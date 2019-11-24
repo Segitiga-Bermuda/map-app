@@ -20,10 +20,10 @@ function App() {
           <Route path="/" exact={true}>
             <Countries />
           </Route>
-          <Route path="/countries/:name">
+          <Route path="/countries/:name" exact={true}>
             <Country />
           </Route>
-          <Route path="countries">
+          <Route path="/countries/pages/:page/items/:items" exact={true}>
             <Countries />
           </Route>
           <Route path="/sign-up">
