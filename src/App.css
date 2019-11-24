@@ -1,3 +1,11 @@
+@keyframes a {
+  0% {
+    transform: scale(1.0) rotate(0deg);
+  } 100% {
+    transform: scale(1.5) rotate(360deg);
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -19,4 +27,35 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.jumbotron {
+  background-color: #505050;
+}
+
+.table td:nth-child(1) {
+  color: chartreuse;
+  font-weight: 900;
+  text-align: left;
+}
+
+.table td:nth-child(3) {
+  color: aqua;
+}
+
+.carousel-item {
+  max-height: 100% !important;
+  overflow: auto !important;
+}
+
+.effect-a:hover {
+  background-color: rgba(80, 80, 80, 1.0) !important;
+  cursor: pointer
+}
+
+.effect-b:hover {
+  animation-name: a;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
 }
