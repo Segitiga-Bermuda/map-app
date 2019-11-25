@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Git from "../assets/images/github-logo-white.png";
 import Netlify from '../assets/images/logomark-dark.png'
-import map from "../assets/images/map2.jpg";
+import map from "../assets/images/3.jpg";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({

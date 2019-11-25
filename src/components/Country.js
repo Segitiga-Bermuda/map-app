@@ -166,8 +166,11 @@ class Country extends Component {
                                         maxHeight: '300px'
                                     }}>
                                         <summary>
-                                            <h1 className="text-danger" style={{
-                                                fontFamily: '"Patrick Hand"'
+                                            <h1 className="text-light" style={{
+                                                backgroundColor: 'rgba(80, 80, 80, 0.75)',
+                                                fontFamily: '"Patrick Hand"',
+                                                marginBottom: '50px',
+                                                padding: '25px 0'
                                             }}>
                                                 Geography
                                             </h1>
@@ -299,8 +302,11 @@ class Country extends Component {
                                         overflow: 'auto'
                                     }}>
                                         <summary>
-                                            <h1 className="text-danger" style={{
-                                                fontFamily: '"Patrick Hand"'
+                                            <h1 className="text-light" style={{
+                                                backgroundColor: 'rgba(80, 80, 80, 0.75)',
+                                                fontFamily: '"Patrick Hand"',
+                                                marginBottom: '50px',
+                                                padding: '25px 0'
                                             }}>
                                                 Others
                                             </h1>
