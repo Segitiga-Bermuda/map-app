@@ -85,6 +85,10 @@
   width: 43px;
 }
 
+.d-flex img {
+  margin: 20px 10px !important;
+}
+
 @media screen and (max-width: 768px) {
   .forms {
     box-sizing: border-box;

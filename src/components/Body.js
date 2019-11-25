@@ -2,6 +2,11 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
+import ReactLogo from '../assets/images/react.png'
+import AxiosLogo from '../assets/images/axios.png'
+import BootstrapLogo from '../assets/images/bootstrap.png'
+import MaterialUILogo from '../assets/images/material-ui.png'
+import Image from 'react-bootstrap/Image'
 
 
 const useStyles = makeStyles(theme => ({
@@ -69,6 +74,24 @@ export default function Body() {
           </h1>
           </Paper>
           <Paper className={classes.paper}>
+            <div className="d-flex justify-content-center">
+              <Image thumbnail alt="React Logo" src={ReactLogo} style={{
+                height: '100px',
+                width: 'auto'
+              }} />
+              <Image thumbnail alt="Bootstrap Logo" src={BootstrapLogo} style={{
+                height: '100px',
+                width: 'auto'
+              }} />
+              <Image thumbnail alt="Material UI Logo" src={MaterialUILogo} style={{
+                height: '100px',
+                width: 'auto'
+              }} />
+              <Image thumbnail alt="Axios Logo" src={AxiosLogo} style={{
+                height: '100px',
+                width: 'auto'
+              }} />
+            </div>
             <h4>
               We are using react.js with Material Ui,React Bootstrap, Axios, and React Router Dom.<br></br>
               We fetch our data for country list at https://restcountries.eu/rest/v2/all <br></br>
