@@ -37,7 +37,7 @@ class SignIn extends Component {
         if (this.state.email == user.email && this.state.password == user.password) {
             localStorage.setItem('isVerified', JSON.stringify(true))
 
-            this.props.history.replace('/countries/pages/1')
+            this.props.history.replace('/home')
         } else {
             alert('Email atau password salah!')
         }
