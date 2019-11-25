@@ -74,7 +74,7 @@ export default function Body() {
           </h1>
           </Paper>
           <Paper className={classes.paper}>
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center" style={{flexWrap:'wrap'}}>
               <Image thumbnail alt="React Logo" src={ReactLogo} style={{
                 height: '100px',
                 width: 'auto'
