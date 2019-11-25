@@ -20,18 +20,14 @@ export default class NavBar extends Component {
                     </Navbar.Brand>
                     <Nav>
                         <Nav.Item>
-                            <Nav.Link>
-                                <Link to="/sign-up">
-                                    Sign Up
-                        </Link>
-                            </Nav.Link>
+                            <Link to="/sign-up" className="nav-link">
+                                Sign Up
+                            </Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link>
-                                <Link to="/sign-in">
-                                    Sign In
+                            <Link to="/sign-in" className="nav-link">
+                                Sign In
                             </Link>
-                            </Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar>
@@ -47,32 +43,24 @@ export default class NavBar extends Component {
                     Bermuda &#9650; Triangle
                 </Navbar.Brand>
                 <Nav.Item>
-                    <Nav.Link>
-                        <Link to="/home">
-                            Home
-                        </Link>
-                    </Nav.Link>
+                    <Link to="/home" className="nav-link">
+                        Home
+                    </Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link>
-                        <Link to="/about-us">
-                            About Us
-                        </Link>
-                    </Nav.Link>
+                    <Link to="/about-us" className="nav-link">
+                        About Us
+                    </Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link>
-                        <Link to="/countries/pages/1">
-                            Countries
-                        </Link>
-                    </Nav.Link>
+                    <Link to="/countries/pages/1" className="nav-link">
+                        Countries
+                    </Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link>
-                        <Link to="/sign-out">
-                            Sign Out
-                        </Link>
-                    </Nav.Link>
+                    <Link to="/sign-out" className="nav-link">
+                        Sign Out
+                    </Link>
                 </Nav.Item>
             </Navbar>
         )
