@@ -55,7 +55,7 @@ export default function Header() {
             <a href="https://github.com/Segitiga-Bermuda/map-app">
               <img alt="Github" height="100px" className="logo" src={Git} />
             </a>
-            <a href="https://github.com/Segitiga-Bermuda/map-app">
+            <a href="https://country-api.netlify.com/">
               <img alt="Netlify" height="100px" className="logo" src={Netlify} />
             </a>
           </div>
