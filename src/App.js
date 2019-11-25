@@ -18,16 +18,19 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact={true}>
-            <Countries />
+            <SignIn />
           </Route>
-          <Route path="/countries/:name" exact={true}>
+          <Route path="/country/:name">
             <Country />
           </Route>
-          <Route path="/countries/pages/:page/items/:items" exact={true}>
+          <Route path="/countries/pages/:page">
             <Countries />
           </Route>
           <Route path="/sign-up">
             <SignUp />
+          </Route>
+          <Route path="/sign-in">
+            <SignIn />
           </Route>
           <Route path="/sign-out">
             <SignOut />

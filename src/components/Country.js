@@ -4,6 +4,7 @@ import { Row, Col, Jumbotron, Carousel, Table } from 'react-bootstrap'
 import { withRouter } from 'react-router-dom'
 import Map from '../assets/images/map.jpg'
 import Badge from 'react-bootstrap/Badge'
+import NavBar from './NavBar'
 
 class Country extends Component {
     constructor(props) {
@@ -19,6 +20,10 @@ class Country extends Component {
 
         this.formatNumber = this.formatNumber.bind(this)
         this.formatObject = this.formatObject.bind(this)
+
+        if (!JSON.parse(localStorage.getItem('isVerified'))) {
+            this.props.history.replace('/sign-up')
+        }
     }
 
     formatNumber(integer) {
@@ -42,7 +47,7 @@ class Country extends Component {
 
         return returnVal.reverse().join('')
     }
-    
+
 
     componentDidMount() {
         const {
@@ -89,6 +94,7 @@ class Country extends Component {
     render() {
         return (
             <div>
+                <NavBar />
                 <Carousel interval={0} indicators={false}>
                     <Carousel.Item>
                         <Jumbotron fluid={true} className="d-flex align-items-center justify-content-center" style={{

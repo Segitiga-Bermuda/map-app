@@ -59,3 +59,36 @@
   animation-fill-mode: forwards;
   cursor: pointer;
 }
+
+.navbar-brand {
+  color: #ffffff !important;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 3px solid #a0a0a0;
+}
+
+.nav-item a {
+  color: #ffffff !important;
+}
+
+.forms {
+  box-shadow: 5px 5px 10px black;
+  border-radius: 10px;
+  margin: 25px auto;
+  padding: 10px;
+  width: 500px;
+}
+
+.page-item {
+  width: 43px;
+}
+
+@media screen and (max-width: 768px) {
+  .forms {
+    box-sizing: border-box;
+    margin: 25px 0;
+    width: 100%;
+  }
+}

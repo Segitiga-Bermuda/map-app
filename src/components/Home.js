@@ -1,11 +1,39 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { makeStyles } from "@material-ui/core/styles";
+import Grid from "@material-ui/core/Grid";
+import Header from "./Header";
+import Body from "./Body";
+import Bg from "../assets/images/2.jpg";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
-export default class Home extends Component {
-    render() {
-        return (
-            <div>
+const useStyles = makeStyles(theme => ({
+    root: {
+        flexGrow: 1,
+        backgroundImage: `url(${Bg})`
+    },
+    paper: {
+        margin: theme.spacing(1),
+        padding: theme.spacing(2),
+        textAlign: "center",
 
-            </div>
-        )
+        color: theme.palette.text.secondary
     }
+}));
+
+export default function Home() {
+    const classes = useStyles();
+
+    return (
+        <div>
+            <NavBar></NavBar>
+            <div className={classes.root}>
+                <Grid container spacing={1}>
+                    <Header></Header>
+                    <Body></Body>
+                    <Footer></Footer>
+                </Grid>
+            </div>
+        </div>
+    );
 }
