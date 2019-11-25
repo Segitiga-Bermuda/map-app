@@ -36,11 +36,16 @@ This website help you who wanna know more about country without any useless desc
 
 ### Screenshots
 
-![First Screenshot](https://drive.google.com/open?id=1NZLXKSY_hB9NTjWv_2Ontr6jjkTUHjEF/view)
+![First Screenshot](https://justanaivedreamer.files.wordpress.com/2019/11/screenshot_2019-11-25-countries-app.png)
 
-![Second Screenshot](https://drive.google.com/open?id=1V7EOE9RZE71hbP-12ERzCObiaBiQDNXn/view)
+---
 
-![Third Screenshot](https://drive.google.com/open?id=1jv1PvdD6CMLPE66pNJcEQEuzkU8jawzL/view)
+![Second Screenshot](https://justanaivedreamer.files.wordpress.com/2019/11/screenshot_2019-11-25-countries-app2.png)
+
+
+---
+
+![Third Screenshot](https://justanaivedreamer.files.wordpress.com/2019/11/screenshot_2019-11-25-countries-app1.png)
 
 ## Credits
 
