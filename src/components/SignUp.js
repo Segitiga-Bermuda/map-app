@@ -12,6 +12,7 @@ import {
 import { withRouter, Link } from 'react-router-dom'
 import TeamWork from '../assets/images/teamwork.png'
 import NavBar from './NavBar'
+import Background from '../assets/images/background-2.jpg'
 
 class SignUp extends Component {
     constructor(props) {
@@ -51,9 +52,17 @@ class SignUp extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{
+                backgroundImage: `url(${Background})`,
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                height: window.innerHeight - 56 + 'px'
+            }}>
                 <NavBar />
-                <Form className="forms">
+                <Form className="forms" style={{
+                    backgroundColor: '#ffffff'
+                }}>
                     <Image roundedCircle src={TeamWork} style={{
                         width: '150px',
                         height: 'auto'

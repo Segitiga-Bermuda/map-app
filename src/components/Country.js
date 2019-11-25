@@ -93,7 +93,9 @@ class Country extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{
+                backgroundColor: '#505050'
+            }}>
                 <NavBar />
                 <Carousel interval={0} indicators={false}>
                     <Carousel.Item>

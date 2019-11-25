@@ -10,6 +10,7 @@ import {
 import { withRouter, Link } from 'react-router-dom'
 import TeamWork2 from '../assets/images/teamwork-2.png'
 import NavBar from './NavBar'
+import Background from '../assets/images/background-1.jpg'
 
 class SignIn extends Component {
     constructor(props) {
@@ -37,7 +38,7 @@ class SignIn extends Component {
         if (this.state.email == user.email && this.state.password == user.password) {
             localStorage.setItem('isVerified', JSON.stringify(true))
 
-            this.props.history.replace('/countries/pages/1')
+            this.props.history.replace('/home')
         } else {
             alert('Email atau password salah!')
         }
@@ -53,9 +54,17 @@ class SignIn extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{
+                backgroundImage: `url(${Background})`,
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                height: window.innerHeight - 56 + 'px'
+            }}>
                 <NavBar />
-                <Form className="forms">
+                <Form className="forms" style={{
+                    backgroundColor: '#ffffff'
+                }}>
                     <Image roundedCircle src={TeamWork2} style={{
                         width: '150px',
                         height: 'auto'

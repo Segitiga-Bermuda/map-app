@@ -91,4 +91,16 @@
     margin: 25px 0;
     width: 100%;
   }
+  .jumbotron h1.display-1 {
+    font-size: 1.5em;
+  }
+
+  .jumbotron h1.text-danger {
+    font-size: 1.25em;
+  }
+
+  .table td {
+    font-size: 0.75em !important;
+  }
 }
+
