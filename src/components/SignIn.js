@@ -35,12 +35,16 @@ class SignIn extends Component {
 
         let user = JSON.parse(localStorage.getItem('user'))
 
-        if (this.state.email === user.email && this.state.password === user.password) {
-            localStorage.setItem('isVerified', JSON.stringify(true))
+        if (user) {
+            if (this.state.email === user.email && this.state.password === user.password) {
+                localStorage.setItem('isVerified', JSON.stringify(true))
 
-            this.props.history.replace('/home')
+                this.props.history.replace('/home')
+            } else {
+                alert('Email atau password salah!')
+            }
         } else {
-            alert('Email atau password salah!')
+            alert('Harap buat akun terlebih dahulu!')
         }
     }
 

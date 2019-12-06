@@ -89,7 +89,7 @@ class SignUp extends Component {
                         }}>
                             <Link to="/sign-in">
                                 Already have an account, click this link.
-                        </Link>
+                            </Link>
                         </FormText>
                     </FormGroup>
                     <FormGroup>
