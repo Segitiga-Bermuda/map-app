@@ -62,7 +62,7 @@ class Country extends Component {
             .then(res => {
                 this.setState({
                     country: res.data.find(country => {
-                        return country.name.replace(/\s/g, '-').toLowerCase() == name
+                        return country.name.replace(/\s/g, '-').toLowerCase() === name
                     }),
                 })
 

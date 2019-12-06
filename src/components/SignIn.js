@@ -27,7 +27,7 @@ class SignIn extends Component {
     }
 
     handleClick() {
-        if (this.state.email == '' || this.state.password == '') {
+        if (this.state.email === '' || this.state.password === '') {
             alert('Harap isi semua field!')
 
             return null
@@ -35,7 +35,7 @@ class SignIn extends Component {
 
         let user = JSON.parse(localStorage.getItem('user'))
 
-        if (this.state.email == user.email && this.state.password == user.password) {
+        if (this.state.email === user.email && this.state.password === user.password) {
             localStorage.setItem('isVerified', JSON.stringify(true))
 
             this.props.history.replace('/home')

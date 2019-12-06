@@ -13,7 +13,6 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import { fontFamily } from "@material-ui/system";
 
 const useStyles = makeStyles(theme => ({
   gogo: {

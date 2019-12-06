@@ -9,8 +9,7 @@ import {
   FormControl,
   FormGroup,
   Row,
-  Col,
-  Navbar
+  Col
 } from "react-bootstrap";
 import { withRouter } from 'react-router-dom'
 import WebWorker from '../WebWorker'
@@ -60,7 +59,7 @@ class Countries extends Component {
       keywords: val
     })
 
-    if (val == '') {
+    if (val === '') {
       this.setState({
         isVisible: true
       })

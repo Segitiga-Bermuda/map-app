@@ -31,11 +31,9 @@ export default function Home() {
                 <Grid container spacing={1}>
                     <Header></Header>
                     <Body></Body>
-                 
                 </Grid>
                 <Footer></Footer>
             </div>
-  
         </div>
     );
 }
