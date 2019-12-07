@@ -5,11 +5,8 @@ import Home from './components/Home'
 import SignIn from './components/SignIn'
 import SignOut from './components/SignOut'
 import SignUp from './components/SignUp'
-import Header from './components/Header'
 import AboutUs from './components/AboutUs'
 import Countries from './components/Countries'
-import NavBar from './components/NavBar'
-import Footer from './components/Footer'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
